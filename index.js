@@ -3,7 +3,7 @@
 // logState prints completion status
 // markCompleted changes task to completed
 
-function newTask(title, description) {
+const newTask = function(title, description) {
   const task = {
     title: title,
     description: description,
@@ -17,9 +17,9 @@ function newTask(title, description) {
       this.complete = true;
     }
 
-  }
+  };
   return task;
-}
+};
 
 // // DRIVER CODE BELOW
 
@@ -32,6 +32,7 @@ task1.markCompleted();
 task1.logState(); // Clean Cat Litter has been completed
 
 console.log('task 1 is', task1.title);
-task2.markCompleted()
+task2.markCompleted();
 task2.logState();
 
+//CL run: npm start
